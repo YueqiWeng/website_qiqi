@@ -1,0 +1,200 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; font-family: "Raleway", sans-serif; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }
+@view-transition { navigation: auto; }
+header { view-transition-name: site-header; }
+main { view-transition-name: site-main; }
+footer { view-transition-name: site-footer; }
+::view-transition-old(site-header),
+::view-transition-new(site-header) {
+  animation-duration: 180ms;
+  animation-timing-function: ease;
+}
+::view-transition-old(site-main) { animation: 160ms ease both page-fade-out; }
+::view-transition-new(site-main) { animation: 280ms ease both page-fade-in; }
+::view-transition-old(site-footer),
+::view-transition-new(site-footer) { animation-duration: 200ms; animation-timing-function: ease; }
+@keyframes page-fade-out { to { opacity: 0; } }
+@keyframes page-fade-in { from { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) { animation: none !important; }
+}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-dim": "#cfdaf2", "badge-teal-bg": "#CCFBF1", "outline-variant": "#bfc7d2", "on-primary-container": "#fdfcff", "secondary-fixed": "#5cfae7", "background": "#f9f9ff", "primary-fixed": "#cce5ff", "badge-sky-bg": "#E0F2FE", "on-tertiary-fixed-variant": "#614000", "inverse-surface": "#263143", "primary": "#006194", "error": "#ba1a1a", "on-secondary-fixed-variant": "#005049", "on-tertiary-container": "#fffbff", "tertiary-fixed": "#ffddb1", "on-secondary-container": "#007167", "scholar-blue": "#0077B5", "tertiary-fixed-dim": "#ffba49", "on-primary": "#ffffff", "surface-card": "#FFFFFF", "surface": "#f9f9ff", "tertiary-container": "#9e6a00", "text-muted": "#64748B", "on-error": "#ffffff", "outline": "#707881", "tertiary": "#7d5400", "inverse-primary": "#93ccff", "surface-container-high": "#dee8ff", "on-tertiary-fixed": "#291800", "on-error-container": "#93000a", "on-primary-fixed": "#001d31", "on-surface": "#111c2d", "secondary-container": "#5cfae7", "on-primary-fixed-variant": "#004b73", "on-secondary": "#ffffff", "surface-container": "#e7eeff", "surface-variant": "#d8e3fb", "primary-container": "#007bb9", "surface-container-low": "#f0f3ff", "surface-container-lowest": "#ffffff", "on-tertiary": "#ffffff", "surface-tint": "#006398", "on-secondary-fixed": "#00201d", "border-subtle": "#E2E8F0", "on-surface-variant": "#3f4850", "surface-canvas": "#F8FAFC", "surface-bright": "#f9f9ff", "secondary": "#006a61", "secondary-fixed-dim": "#33ddcb", "inverse-on-surface": "#ecf1ff", "surface-container-highest": "#d8e3fb", "on-background": "#111c2d", "error-container": "#ffdad6", "primary-fixed-dim": "#93ccff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1.5rem", "space-md": "1rem", "space-2xl": "4rem", "margin-desktop": "3rem", "space-lg": "1.5rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-sm": "0.5rem" }, fontFamily: { "headline-sm": ["Raleway"], "body-lg": ["Raleway"], "label-sm": ["Raleway"], "label-md": ["Raleway"], "display": ["Raleway"], "headline-lg": ["Raleway"], "headline-md": ["Raleway"], "display-mobile": ["Raleway"], "body-sm": ["Raleway"], "body-md": ["Raleway"] }, fontSize: { "headline-sm": ["18px", { lineHeight: "26px", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "30px", fontWeight: "400" }], "label-sm": ["11px", { lineHeight: "16px", letterSpacing: "0.03em", fontWeight: "600" }], "label-md": ["13px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "600" }], "display": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "600" }], "headline-md": ["22px", { lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600" }], "display-mobile": ["30px", { lineHeight: "38px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-sm": ["13px", { lineHeight: "20px", fontWeight: "400" }], "body-md": ["15px", { lineHeight: "24px", fontWeight: "400" }] } } } };</script></head><body class="bg-surface-canvas font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-card/85 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 max-w-[1080px] mx-auto px-margin lg:px-margin-desktop flex items-center justify-between gap-space-md"><a class="flex flex-col group" data-path="about-me" href="about.html"><span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Yueqi Weng</span></a><div class="flex items-center gap-space-lg"><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary"><a aria-current="page" class="font-label-md text-label-md text-primary border-b-2 border-primary transition-colors" data-path="about-me" href="about.html">About Me</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface border-b-2 border-transparent transition-colors" data-path="research" href="research.html">Research</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface border-b-2 border-transparent transition-colors" data-path="teaching" href="teaching.html">Teaching</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface border-b-2 border-transparent transition-colors" data-path="portfolio" href="portfolio.html">Portfolio</a></nav><div class="flex items-center gap-space-sm pl-space-sm"><a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" href="https://docs.google.com/document/d/1p1UqLVEDkIwvzD4aqYMp8FSdgLU4SZYs7EsIvrPr7uY/edit?tab=t.0" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-[16px]">description</span><span class="">CV</span></a><a aria-label="Email Yueqi Weng" class="inline-flex items-center justify-center w-8 h-8 rounded-lg text-text-muted hover:text-primary hover:bg-surface-container transition-colors" href="mailto:yueqi.weng07@uga.edu"><span class="material-symbols-outlined text-[20px]">mail</span></a></div></div></div></header><main class="w-full pt-16 bg-surface-canvas"><div class="flex flex-col w-full">
+<!-- Hero Section -->
+<section class="max-w-[1080px] w-full mx-auto px-margin lg:px-margin-desktop pt-space-xl pb-space-2xl">
+<div class="flex flex-col-reverse md:flex-row items-center justify-between gap-space-xl md:gap-space-2xl">
+<!-- Intro Text Column -->
+<div class="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+
+<h1 class="font-display text-display text-on-surface mb-space-xs tracking-tight">
+          Hi, I'm Yueqi.
+        </h1>
+<p class="font-headline-md text-headline-md text-text-muted mb-space-lg">
+          Researcher, Designer, &amp; AI Developer</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-space-lg leading-relaxed"></p><div class="">I design and study human-centered AI and digital learning experiences at the intersection of learning sciences, healthcare, and emerging technologies. My research examines how AI-powered simulations, learning analytics, and interactive technologies can support meaningful learning, rehabilitation, and human-AI collaboration.<div><br></div></div><div class="">My current doctoral research focuses on designing an AI-powered, empathy-driven virtual patient to prepare rehabilitation coaches to deliver problem-solving training for adults with traumatic brain injury. Alongside this work, I investigate learner interaction through eye tracking, generative AI, extended reality, and computational learning analytics.</div><p class=""></p>
+<!-- Social Badges & Academic Links -->
+
+</div>
+<!-- Hero Portrait (Circular Frame Style) -->
+<div class="relative flex-shrink-0 group">
+<div class="w-64 h-64 md:w-72 md:h-72 rounded-full p-2 bg-gradient-to-tr from-primary-fixed to-secondary-fixed shadow-xl flex items-center justify-center">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container shadow-inner">
+<img alt="Elena Vance" class="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500 ease-out" src="images/portrait.jpg">
+</div>
+</div>
+<div class="absolute -bottom-2 right-4 bg-surface-card px-space-md py-1 rounded-full shadow-md flex items-center gap-1.5 text-secondary">
+
+
+</div>
+</div>
+</div>
+</section>
+<!-- 4 Core Pillars Section (Matthew Schmidt Inspired) -->
+<section class="w-full bg-surface-container-low py-space-2xl">
+<div class="max-w-[1240px] w-full mx-auto px-margin lg:px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Research Foundation</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">Core Research &amp; Scholarly Areas</h2>
+<p class="font-body-md text-body-md text-text-muted mt-space-xs"></p><p class=""><strong>Designing human-centered technologies that connect learning, health, artificial intelligence, and human experience.</strong></p><h3></h3><p></p>
+</div>
+<!-- 4 Cards Grid -->
+<div class="grid grid-cols-1 gap-space-lg max-w-full mx-auto md:grid-cols-2 lg:grid-cols-4">
+<!-- Card 1 -->
+<div class="bg-surface-card rounded-xl p-6 lg:p-7 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="w-full h-1.5 bg-primary absolute top-0 left-0"></div>
+<div>
+<div class="w-12 h-12 rounded-full bg-badge-sky-bg text-primary flex items-center justify-center mb-space-md group-hover:scale-110 transition-transform mx-auto">
+<span class="material-symbols-outlined text-[26px]">cognition</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">AI-Powered Learning &amp; Simulation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">I design intelligent learning environments that use generative AI, conversational systems, and virtual simulation to create adaptive and authentic learning experiences.</p>
+</div>
+
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-card rounded-xl p-6 lg:p-7 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="w-full h-1.5 bg-error absolute top-0 left-0"></div>
+<div>
+<div class="w-12 h-12 rounded-full bg-error-container text-on-error-container flex items-center justify-center mb-space-md group-hover:scale-110 transition-transform mx-auto">
+<span class="material-symbols-outlined text-[26px]">visibility</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-error mb-space-xs">Learning Analytics &amp; Human Behavior</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">I use multimodal and computational methods, including eye tracking, interaction logs, machine learning, and qualitative analysis, to understand how learners interact with digital environments.</p>
+</div>
+<div class="pt-space-sm flex items-center gap-1 text-error font-label-md text-label-md">
+
+
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-card rounded-xl p-6 lg:p-7 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="w-full h-1.5 bg-secondary absolute top-0 left-0"></div>
+<div>
+<div class="w-12 h-12 rounded-full bg-badge-teal-bg text-secondary flex items-center justify-center mb-space-md group-hover:scale-110 transition-transform mx-auto">
+<span class="material-symbols-outlined text-[26px]">public</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-secondary mb-space-xs">Health &amp; Rehabilitation Technology</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">I develop and evaluate digital learning interventions supporting rehabilitation, health education, problem-solving, and patient-centered care, with particular attention to traumatic brain injury.</p>
+</div>
+<div class="pt-space-sm flex items-center gap-1 text-secondary font-label-md text-label-md">
+
+
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-card rounded-xl p-6 lg:p-7 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="w-full h-1.5 bg-primary absolute top-0 left-0"></div>
+<div>
+<div class="w-12 h-12 rounded-full bg-badge-sky-bg text-primary flex items-center justify-center mb-space-md group-hover:scale-110 transition-transform mx-auto">
+<span class="material-symbols-outlined text-[26px]">hub</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Computer Vision &amp; Machine Learning</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">I investigate mixture-of-experts architectures, dynamic 3D Gaussian splatting, continual vision-language learning, and adaptive representations under task and spatial complexity.</p>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+<!-- News & Highlights Timeline -->
+<section class="max-w-[1080px] w-full mx-auto px-margin lg:px-margin-desktop py-space-2xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Activity Stream</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">Recent News &amp; Updates</h2>
+</div>
+<a class="font-label-md text-label-md text-primary hover:underline inline-flex items-center gap-1 self-start md:self-auto" href="#">
+<span class="">View all announcements</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- Timeline List with Soft Cards -->
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1 -->
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="px-3 py-1 rounded-full bg-badge-sky-bg text-primary font-label-sm text-label-sm font-semibold flex-shrink-0">
+            2026</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface">Article Published in JMIR</p>
+<p class="font-body-sm text-body-sm text-text-muted">Community-based participatory research informing the design of electronic problem-solving training for individuals with traumatic brain injury.</p>
+</div>
+</div>
+<span class="px-space-md py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm self-end sm:self-auto">
+          Publication
+        </span>
+</div>
+<!-- Item 2 -->
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold flex-shrink-0">2026</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface">Rehabilitation Psychology Article In Press</p>
+<p class="font-body-sm text-body-sm text-text-muted">Electronic problem-solving training after traumatic brain injury: A pilot study of three delivery modalities.</p>
+</div>
+</div>
+<span class="px-space-md py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm self-end sm:self-auto"><span style="letter-spacing: 0.33px;" class="">Publication</span></span>
+</div>
+<!-- Item 3 -->
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="px-3 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex-shrink-0">
+            2026</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface">ACRM Conference Paper</p>
+<p class="font-body-sm text-body-sm text-text-muted">Research on learning engagement patterns in electronic problem-solving training for individuals with traumatic brain injury.</p>
+</div>
+</div>
+<span class="px-space-md py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm self-end sm:self-auto"><span style="letter-spacing: 0.33px;" class="">Publication</span></span>
+</div>
+<div class="bg-surface-card p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="px-3 py-1 rounded-full bg-badge-sky-bg text-primary font-label-sm text-label-sm font-semibold flex-shrink-0">2026</div><div><p class="font-headline-sm text-headline-sm text-on-surface">Paper submitted to ICLR</p><p class="font-body-sm text-body-sm text-text-muted">MoCE: Mixture of Communitified Experts for Continual Vision-Language Learning under Task-Complexity Flux.</p></div></div><span class="px-space-md py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm self-end sm:self-auto">Preprint</span></div></div>
+</section>
+<!-- Outside the Lab / Personal Touch (Jennifer Lu Inspired) -->
+
+<!-- Friendly Call To Action / Let's Chat Section -->
+<section class="max-w-[1080px] w-full mx-auto px-margin lg:px-margin-desktop py-space-2xl text-center">
+<div class="bg-gradient-to-b from-surface-card to-surface-container-low rounded-2xl p-space-xl md:p-space-2xl shadow-sm flex flex-col items-center max-w-3xl mx-auto">
+<div class="w-12 h-12 rounded-full bg-badge-sky-bg text-primary flex items-center justify-center mb-space-md shadow-sm">
+<span class="material-symbols-outlined text-[28px]">handshake</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-space-xs">
+        Let's Connect &amp; Collaborate
+      </h2>
+<p class="font-body-lg text-body-lg text-text-muted max-w-lg mb-space-lg leading-relaxed">I am always interested in conversations and collaborations around <strong>human-centered AI, learning experience design, health and rehabilitation technologies, learning analytics, and emerging learning environments</strong>.</p>
+<div class="flex flex-wrap items-center justify-center gap-space-sm"><a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="inline-flex items-center gap-space-xs px-space-md py-3 rounded-lg bg-surface-card text-on-surface font-label-md text-label-md hover:bg-surface-container hover:text-primary shadow-sm hover:shadow-md transition-all"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46v-8.37M7.86 6.5a1.63 1.63 0 0 0-1.63 1.62c0 .9.73 1.63 1.63 1.63a1.63 1.63 0 0 0 1.63-1.63c0-.9-.73-1.62-1.63-1.62Z"></path></svg><span class="">LinkedIn</span></a><a href="https://scholar.google.com/citations?user=GQfnH30AAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" class="inline-flex items-center gap-space-xs px-space-md py-3 rounded-lg bg-surface-card text-on-surface font-label-md text-label-md hover:bg-surface-container hover:text-primary shadow-sm hover:shadow-md transition-all"><span class="material-symbols-outlined text-[20px]">school</span><span class="">Google Scholar</span></a><a href="mailto:yueqi.weng07@uga.edu" aria-label="Email" class="inline-flex items-center gap-space-xs px-space-md py-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container shadow-sm hover:shadow-md transition-all"><span class="material-symbols-outlined text-[20px]">mail</span><span class="">Email</span></a></div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-card shadow-[0_-1px_8px_rgba(0,0,0,0.02)] mt-space-2xl"><div class="max-w-[1080px] mx-auto px-margin lg:px-margin-desktop py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg text-center md:text-left"><div><p class="font-body-sm text-body-sm text-text-muted">© 2026 Yueqi Weng All Right Reserve</p></div><div class="flex items-center gap-space-md"><a aria-label="Google Scholar" class="inline-flex items-center justify-center w-9 h-9 rounded-full text-text-muted hover:text-primary hover:bg-surface-container transition-colors" href="https://scholar.google.com/citations?user=GQfnH30AAAAJ&amp;hl=zh-CN" target="_blank" rel="noopener noreferrer"></a><a aria-label="LinkedIn" class="inline-flex items-center justify-center w-9 h-9 rounded-full text-text-muted hover:text-primary hover:bg-surface-container transition-colors" href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer"></a><a aria-label="Send Email" class="inline-flex items-center justify-center w-9 h-9 rounded-full text-text-muted hover:text-primary hover:bg-surface-container transition-colors" href="mailto:yueqi.weng07@uga.edu"></a></div></div></footer>
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
